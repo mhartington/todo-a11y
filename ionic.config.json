@@ -1,0 +1,7 @@
+{
+  "name": "todo-a11y",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
