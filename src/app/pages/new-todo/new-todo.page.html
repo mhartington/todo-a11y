@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>New</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">New</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-list>
+  <form (ngSubmit)="saveTodo()">
+      <ion-item>
+        <ion-input
+          placeholder="Task"
+          type="text"
+          name="name"
+          [(ngModel)]="form.name"
+        />
+
+      </ion-item>
+    <ion-button type="submit">Save Task</ion-button>
+  </form>
+</ion-list>
+</ion-content>
